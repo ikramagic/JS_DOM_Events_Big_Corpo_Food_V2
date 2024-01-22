@@ -1,17 +1,22 @@
 // Tabs
-const tabs = document.querySelectorAll(".nav-link");
+const tabs = document.querySelectorAll(".nav-tabs .nav-link");
 const tabContents = document.querySelectorAll(".tab-pane");
 
 function activateTab(tabIndex) {
-  tabs.forEach((tab) => tab.classList.remove("active"));
-  tabContents.forEach((content) => content.classList.remove("show", "active"));
+  tabs.forEach((tab) => {
+    tab.classList.remove("active");
+  });
+  tabContents.forEach((content) => {
+    content.classList.remove("show", "active");
+  });
 
   tabs[tabIndex].classList.add("active");
   tabContents[tabIndex].classList.add("show", "active");
 }
 
 tabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => {
+  tab.addEventListener("click", (event) => {
+    event.preventDefault(); 
     activateTab(index);
   });
 });
@@ -66,6 +71,32 @@ document
   .getElementById("generateMenuButton")
   .addEventListener("click", generateRandomMenu);
 
+  // Photo gallery
+function createPhotoGallery() {
+    const photosTab = document.getElementById("photos");
+    const photoUrls = [
+      "./assets/img/halloumi-roman-odintsov-sin-bg.png",
+      "./assets/img/i-want-to-spam-uncle-spam-sin-bg.png",
+    ];
+  
+    const row = document.createElement("div");
+    row.className = "row";
+  
+    photoUrls.forEach((url) => {
+      const col = document.createElement("div");
+      col.className = "col-md-4";
+      const img = document.createElement("img");
+      img.src = url;
+      img.className = "img-fluid";
+      col.appendChild(img);
+      row.appendChild(col);
+    });
+  
+    photosTab.appendChild(row);
+  }
+  
+  createPhotoGallery();
+  
 // Exit pop-up
 
 let popupShown = false;
@@ -91,29 +122,3 @@ document.querySelector(".overlay").addEventListener("click", hideExitPopup);
 document.addEventListener("mouseleave", (event) => {
   showExitPopup();
 });
-
-// Photo gallery
-function createPhotoGallery() {
-  const photosTab = document.getElementById("photos");
-  const photoUrls = [
-    "./assets/img/halloumi-roman-odintsov-sin-bg.png",
-    "./assets/img/i-want-to-spam-uncle-spam-sin-bg.png",
-  ];
-
-  const row = document.createElement("div");
-  row.className = "row";
-
-  photoUrls.forEach((url) => {
-    const col = document.createElement("div");
-    col.className = "col-md-4";
-    const img = document.createElement("img");
-    img.src = url;
-    img.className = "img-fluid";
-    col.appendChild(img);
-    row.appendChild(col);
-  });
-
-  photosTab.appendChild(row);
-}
-
-createPhotoGallery();
