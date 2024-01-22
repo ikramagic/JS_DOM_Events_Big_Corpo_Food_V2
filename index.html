@@ -5,13 +5,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;800&family=Ysabeau+SC:wght@1000&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>JavaScript</h1>
+    <div class="header">
+      <h1>LΕ RΕΣΤAURANΤ</h1>
+    </div>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#menu">Menu</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade show active">
+        <div id="content">
+          <h2>Bienvenue</h2>
+          <img
+            id="photo"
+            src="assets/img/halloumi-roman-odintsov-sin-bg.png"
+            alt="Photo d'une tartine de halloumi"
+          />
+          <p id="description">
+            Halloumi : Le fromage le plus célèbre de l'île, délicieux et
+            polyvalent à la texture unique, se dégute à la fois froid et cuit
+            (frit ou grillé).
+          </p>
+        </div>
+      </div>
+      <div id="menu" class="tab-pane fade"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
