@@ -75,13 +75,15 @@ document
 function createPhotoGallery() {
     const photosTab = document.getElementById("photos");
     const photoUrls = [
-      "./assets/img/halloumi-roman-odintsov-sin-bg.png",
       "./assets/img/brochette-polina-tankilevitch-sin-bg.png",
       "./assets/img/dessert-any-lane-sin-bg.png",
       "./assets/img/falafel-nataliya-vaitkevich-sin-bg.png",
       "./assets/img/pita-polina-tankilevitch-sin-bg.png",
       "./assets/img/plat-jer-chung-sin-bg.png",
-      "./assets/img/tart-polina-tankilevitch-sin-bg.png",
+      "./assets/img/food-william-choquette-sin-bg.png",
+      "./assets/img/fruit-bowl-jane-doan-sin-bg.png",
+      "./assets/img/orange-tart-cats-coming-sin-bg.png",
+      "./assets/img/yummy-food-julie-aagaard-sin-bg.png",
     ];
   
     const row = document.createElement("div");
