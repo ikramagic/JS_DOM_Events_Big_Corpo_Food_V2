@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <title>Big Corpo Food Inc.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,68 +17,104 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
-      <h1>RΕΣΤAURANΤ</h1>
-    </div>
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" data-toggle="tab" href="#home">Accueil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#menu">Menu</a>
-      </li>
-    </ul>
-    <div class="tab-content">
-      <div id="home" class="tab-pane fade show active">
-        <div id="content">
-          <h2>Bienvenue</h2>
-          <img
-            id="photo"
-            src="assets/img/halloumi-roman-odintsov-sin-bg.png"
-            alt="Photo d'une tartine de halloumi"
-          />
-          <p id="description">
-            Halloumi : Le fromage le plus célèbre de l'île, délicieux et
-            polyvalent à la texture unique, se dégute à la fois froid et cuit
-            (frit ou grillé).
-          </p>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="header">
+            <h1>LA RΕΣΤAVERNE</h1>
+          </div>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#photos">Photos</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade show active">
+              <div id="content">
+                <h2>Bienvenue</h2>
+                <img
+                  id="photo"
+                  src="assets/img/halloumi-roman-odintsov-sin-bg.png"
+                  alt="Photo d'une tartine de halloumi"
+                />
+                <p id="description">
+                  Halloumi : Le fromage le plus célèbre de l'île, délicieux et
+                  polyvalent à la texture unique, se dégute à la fois froid et
+                  cuit (frit ou grillé).
+                </p>
+              </div>
+              <div id="menu" class="tab-pane fade">
+                <p id="generatedMenu">
+                  Menu classique : La fameusse tartine healthy au halloumi, au
+                  beurre d'avocat et graines de sésames en or massif
+                </p>
+                <button id="generateMenuButton" class="btn btn-secondary">
+                  Marre de ce menu ? Changez-le !
+                </button>
+              </div>
+              <div id="photos" class="tab-pane fade"></div>
+            </div>
+            <div class="exit-popup">
+              <div class="exit-popup-header">
+                <h2>Pas si vite...</h2>
+                <span class="exit-popup-close">&times;</span>
+              </div>
+              <h3>
+                T'as cru qu'on gagnait de l'argent en te vendant du fromage à la
+                menthe ?
+              </h3>
+              <p>
+                Non, non, non, tu pars pas sans payer, on veut tes données !
+              </p>
+              <img
+                id="uncle-sam"
+                src="assets/img/i-want-to-spam-uncle-spam-sin-bg.png"
+                alt="Photo de l'Oncle Sam"
+              />
+              <form>
+                <div class="mb-3">
+                  <label for="emailInput" class="form-label"
+                    >Ton adresse e-mail poubelle :</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailInput"
+                    placeholder="nom@example.com"
+                  />
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="likeEatingCheck"
+                  />
+                  <label class="form-check-label" for="likeEatingCheck"
+                    >Oui, j'aime manger des cookies !</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-secondary mt-3">
+                  Spammez-moi s'il vous plait !
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-<div class="exit-popup">
-    <div class="exit-popup-header">
-        <h2>Pas si vite...</h2>
-        <span class="exit-popup-close">&times;</span>
-    </div>
-    <h3>T'as cru qu'on gagnait de l'argent en te vendant du fromage à la menthe ?</h3>
-    <p>Non, non, non, tu pars pas sans payer, on veut tes données !</p>
-    <img
-    id="photo"
-    src="assets/img/i-want-to-spam-uncle-spam-sin-bg.png"
-    alt="Photo de l'Oncle Sam"
-  />
-    <form>
-        <div class="mb-3">
-            <label for="emailInput" class="form-label">Ton adresse e-mail poubelle :</label>
-            <input type="email" class="form-control" id="emailInput" placeholder="nom@example.com">
-        </div>
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="likeEatingCheck">
-            <label class="form-check-label" for="likeEatingCheck">Oui, j'aime manger des cookies !</label>
-        </div>
-        <button type="submit" class="btn btn-secondary mt-3">Spammez-moi s'il vous plait !</button>
-    </form>
-</div>
-
-<div class="overlay"></div>
       </div>
-      <div id="menu" class="tab-pane fade">
-        <p id="generatedMenu">
-            Menu classique : La fameusse tartine healthy au halloumi, au beurre d'avocat et graines de sésames en or massif
-        </p>
-        <button id="generateMenuButton" class="btn btn-secondary">
-            Marre de ce menu ? Changez-le !        
-        </button>
-      </div>
+      <div class="overlay"></div>
     </div>
+    <footer class="text-center">
+      <p>© LA RESTAVERNE (2024)</p>
+      <p>Contact : larestaverne@yopmail.com</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
