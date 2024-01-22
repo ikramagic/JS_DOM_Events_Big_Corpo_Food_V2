@@ -1,3 +1,4 @@
+// Tabs
 const tabs = document.querySelectorAll(".nav-link");
 const tabContents = document.querySelectorAll(".tab-pane");
 
@@ -17,6 +18,7 @@ tabs.forEach((tab, index) => {
 
 activateTab(0);
 
+// Change menu options
 const mainCourses = ["Filet de turbot de la mer Noire", "Tablier de sapeur", "Gigot d'agneau", "Faisan de forêt", "Trio de quinoa, chou kale et pousses d'épinard"];
 const techniques = ["à la cocotte", "minute", "avec sa sauce hollandaise", "façon sud-ouest", "comme chez ma grand-mère", "déglacé au saké", "maturé en fût de chêne"];
 const sides = ["une purée de topinambour", "ses frites truffées", "des châtaignes croustillantes", "une brunoise carotte-cèleri", "un oeuf parfait", "sa crème veloutée de fromages affinés"];
@@ -30,3 +32,21 @@ const generateRandomMenu = () => {
 };
 
 document.getElementById("generateMenuButton").addEventListener("click", generateRandomMenu);
+
+// Exit pop-up
+const showExitPopup = () => {
+    document.querySelector('.exit-popup').style.display = 'block';
+    document.querySelector('.overlay').style.display = 'block';
+};
+
+const hideExitPopup = () => {
+    document.querySelector('.exit-popup').style.display = 'none';
+    document.querySelector('.overlay').style.display = 'none';
+};
+
+document.querySelector('.exit-popup-close').addEventListener('click', hideExitPopup);
+document.querySelector('.overlay').addEventListener('click', hideExitPopup);
+
+document.addEventListener('mouseleave', (event) => {
+    showExitPopup();
+});
