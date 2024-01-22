@@ -76,7 +76,12 @@ function createPhotoGallery() {
     const photosTab = document.getElementById("photos");
     const photoUrls = [
       "./assets/img/halloumi-roman-odintsov-sin-bg.png",
-      "./assets/img/i-want-to-spam-uncle-spam-sin-bg.png",
+      "./assets/img/brochette-polina-tankilevitch-sin-bg.png",
+      "./assets/img/dessert-any-lane-sin-bg.png",
+      "./assets/img/falafel-nataliya-vaitkevich-sin-bg.png",
+      "./assets/img/pita-polina-tankilevitch-sin-bg.png",
+      "./assets/img/plat-jer-chung-sin-bg.png",
+      "./assets/img/tart-polina-tankilevitch-sin-bg.png",
     ];
   
     const row = document.createElement("div");
