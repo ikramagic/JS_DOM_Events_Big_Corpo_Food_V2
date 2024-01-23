@@ -23,37 +23,42 @@ tabs.forEach((tab, index) => {
 
 activateTab(0);
 
-// Change menu options
 const mainCourses = [
-  "Filet de turbot de la mer Noire",
-  "Tablier de sapeur",
-  "Gigot d'agneau",
-  "Faisan de forêt",
-  "Trio de quinoa, chou kale et pousses d'épinard",
+  "Moussaka grecque",
+  "Souvlaki de poulet",
+  "Kleftiko (Agneau de Chypre)",
+  "Dolmades aux feuilles de vigne",
+  "Falafels turcs",
 ];
+
 const techniques = [
-  "à la cocotte",
-  "minute",
-  "avec sa sauce hollandaise",
-  "façon sud-ouest",
-  "comme chez ma grand-mère",
-  "déglacé au saké",
-  "maturé en fût de chêne",
+  "à la broche",
+  "grillé",
+  "dans une sauce tzatziki",
+  "à la méditerranéenne",
+  "frit",
+  "accompagné de houmous",
+  "enroulé dans une pita",
 ];
+
 const sides = [
-  "une purée de topinambour",
-  "ses frites truffées",
-  "des châtaignes croustillantes",
-  "une brunoise carotte-cèleri",
-  "un oeuf parfait",
-  "sa crème veloutée de fromages affinés",
+  "Tzatziki et pita fraîche",
+  "Salade grecque",
+  "Frites de patates douces",
+  "Légumes grillés",
+  "Taboulé",
+  "Pommes de terre à l'origan",
+  "Riz citronné",
 ];
+
 const seasonings = [
-  "au yuzu rouge",
-  "au poivre vert de Sichuan",
-  "et une pointe de safran",
-  "à l'ail noir",
-  "et un peu de sucre en poudre",
+  "au yaourt grec",
+  "au citron frais",
+  "avec des herbes méditerranéennes",
+  "à l'ail rôti",
+  "et sumac",
+  "saupoudré de cumin",
+  "accompagné de tahini",
 ];
 
 const getRandom = (data) => data[Math.floor(Math.random() * data.length)];
