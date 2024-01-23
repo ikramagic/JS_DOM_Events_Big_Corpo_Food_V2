@@ -1,8 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3c1c7931-1efc-42a6-a56b-65a39251d3e4/deploy-status)](https://app.netlify.com/sites/la-restaverne/deploys)
+[![Works on my machine](https://forthebadge.com/images/badges/works-on-my-machine.svg)]
+
+---
+
 <table>
   <tr>
-    <td><img src="assets/img/DALL·E 2024-01-23 06.39.25 - Create an impressionistic artwork in the style of Van Gogh, featuring a whimsical cheese and SPAM theme. The scene is a vibrant countryside, painted w.png" alt="SPAM Dall-e Art Surrealist"></td>
-    <td><img src="assets/img/DALL·E 2024-01-23 06.39.40 - Compose an impressionistic artwork in the style reminiscent of Van Gogh with a focus on camembert cheese and SPAM. Visualize a rural landscape with a .png" alt="SPAM Dall-e Art Impressionist"></td>
-  <tr>
-    <td><img src="assets/img/Apercu_site_restaverne.png" alt="Homepage Restaverne Website"></td>
-    <td><img src="assets/img/Menu_site_restaverne.png" alt="Menu Restaverne Website"></td>
+    <td><a href="https://la-restaverne.netlify.app/"></a><img src="assets/img/Bored-Van-Gogh.gif" alt="SPAM Dall-e Art Surrealist"></td>
+    <td><a href="https://la-restaverne.netlify.app/"><img src="assets/img/Bored-Van-Gogh-2.gif" alt="SPAM Dall-e Art Impressionist"></td>
 </table>
