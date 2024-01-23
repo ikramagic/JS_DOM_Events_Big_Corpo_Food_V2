@@ -3,7 +3,7 @@
 
 <table>
   <tr>
-    <td><a href="https://la-restaverne.netlify.app/"></a><img src="assets/img/Bored-Van-Gogh.gif" alt="SPAM Dall-e Art Surrealist"></td>
+        <td><a href="https://la-restaverne.netlify.app/"><img src="assets/img/Bored-Van-Gogh.gif" alt="SPAM Dall-e Art Impressionist"></td>
 </table>
 
 ---
